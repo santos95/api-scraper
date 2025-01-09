@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  python_environment:
+    build: .
+    container_name: python_environment
+    volumes:
+      - "C:\\desarrollo_sortiz\\practice\\web-scrapying\\api-scraper:/app"
+      #- "C:\\Users\\Santos Ortiz\\Documents\\python\\web-scrapying:/app"
+    working_dir: /app
+    #stdin_open: true  # Keep the container open
+    tty: true         # Allocate a terminal
